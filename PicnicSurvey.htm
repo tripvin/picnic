@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fall Picnic - Please RSVP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5dc; /* Beige color */
+            color: #444;
+        }
+        .content {
+            background: rgba(255, 255, 255, 0.8);
+            margin: 0 auto;
+            padding: 20px;
+            width: 600px;
+            border-radius: 15px;
+        }
+        form {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 15px;
+        }
+        form input[type=radio] {
+            margin-top: 10px;
+        }
+        form input[type=number] {
+            width: 50px;
+            padding: 5px;
+        }
+        form input[type=submit] {
+            background: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        form input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        h2, h3 {
+            color: #8B4513; /* SaddleBrown */
+        }
+        p b {
+            color: #8B4513; /* SaddleBrown */
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <h2>We're having a picnic on Friday Sept 15th @ Mercer County Park in Hamilton, NJ !!</h2>
+    <p>
+        It's been more than a few years since our last picnic and it's time! We'll form a small team soon to help plan food, activities, etc. 
+        Reach out to Vinnie if you'd like to help.
+    </p>
+    <p>
+        For now, <b>please RSVP below!</b>
+    </p>
+    <p>
+        <b>Where and when?</b><br> Friday Sept. 15th from 12pm-5pm at Mercer County Park West Picnic Area
+    </p>
+    <p>
+        <b>What does it cost?</b><br> The hope is to cover all costs with sponsors. We may ask for a small contribution, TBD.
+    </p>
+    <p>
+        <b>Why Mercer County Park and not the old place?</b><br> Music. We're looking to host the Lonesome Pines, a stellar Americana style roots band from NJ. 
+        You may recognize one of the members. Amplified music is not permitted at Thompson Park. Also, Mercer County Park is arguably the best park in NJ, 
+        centrally located, and very close to public transportation. Check it out.
+    </p>
+    <p>
+        Located alongside Lake Mercer and within walking distance of the Marina, is the Mercer Park West Picnic Area. 
+        The area includes a 30-foot by 60-foot pavilion and is equipped with 1 large and 1 small charcoal cooking grill, electricity, 
+        and running water, 14 picnic tables under the pavilion and scattered throughout picnic area, and benches overlooking Lake Mercer.  
+        Paddleboats are available for rent at the lake.
+    </p>
+    <p>
+        <b>Can non-APers attend?</b><br>  Yes, since this is not a sanctioned AP event, friends and family are welcome.  Staffers will need to take PTO to attend.
+    </p><br>
+
+    <form action="mailto:tripvin@live.com" method="post" enctype="text/plain">
+        <h3>Please, respond with your attendance:</h3>
+
+        <input type="radio" id="yes" name="attendance" value="Yes, I will attend" required>
+        <label for="yes">Yes, I will attend</label><br><br>
+
+        <input type="radio" id="no" name="attendance" value="No, I can not attend" required>
+        <label for="no">No, I can not attend</label><br><br>
+
+        <label for="attendees">Number of attendees inc. yourself:</label><br><br>
+        <input type="number" id="attendees" name="attendees" min="1" required><br><br>
+
+        <input type="submit" value="Email response">
+    </form>
+<p>
+        <b>***  Created with ChatGPT in 2 prompts :) ***
+    </p><br>
+</div>
+</body>
+</html>
